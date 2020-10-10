@@ -31,7 +31,7 @@ pipeline {
                 message 'Should we go?'
                 id 'Test'
                 ok 'Yes'
-                submitter 'zhangsan'
+                submitter 'admin'
                 parameters {
                     choice choices: ['finished', 'not ready'], description: '', name: 'test1'
                 }
