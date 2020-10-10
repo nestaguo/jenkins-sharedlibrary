@@ -4,7 +4,7 @@
 
 def tools = new org.devops.tools()
 
-hello()
+//hello()
 
 pipeline {
     agent { node { label 'jenkins-master01' } }
