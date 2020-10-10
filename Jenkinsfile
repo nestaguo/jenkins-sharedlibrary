@@ -27,15 +27,16 @@ pipeline {
                 }
             }
             
-            input{
-                message 'Should we go?'
-                id 'Test'
-                ok 'Yes'
-                submitter 'admin'
-                parameters {
-                    choice choices: ['finished', 'not ready'], description: '', name: 'test1'
-                }
-            }
+	    input {
+ 		message 'can we go?'
+		id 'Test1'
+  		ok 'Next'
+  		submitter 'admin'
+  		parameters {
+    	            choice choices: ['finished', 'failed'], description: '', name: 'test1'
+  		}
+	    }	
+           
         }
         
         stage('Parallel Stage') {
